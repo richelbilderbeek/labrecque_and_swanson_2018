@@ -2,6 +2,8 @@
 
 Code of 'Interpretation and Potential Biases of Mendelian Randomization Estimates With Time-Varying Exposures', by Jeremy A Labrecque and Sonja A Swanson
 
+![](table_1_article_and_code.png)
+
 ![](table_1_article.png)
 
 ![](table_1_code.png)

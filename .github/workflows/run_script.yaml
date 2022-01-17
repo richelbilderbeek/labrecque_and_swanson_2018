@@ -1,0 +1,25 @@
+name: run_script
+
+jobs:
+  run_script:
+    runs-on: ubuntu-latest
+    
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: r-lib/actions/setup-r@v1
+
+      #- name: Install libcurl4-openssl-dev
+      #  run: sudo apt install -qq libcurl4-openssl-dev
+      #  if: matrix.os == 'ubuntu-latest'
+
+      - name: Install dependencies
+        run: install.packages(c("pracma", "magrittr", "dplyr"))
+        shell: Rscript {0}
+
+      - name: Run script 
+        run: Rscript labrecque_and_swanson_2018.R
+

@@ -21,7 +21,7 @@ jobs:
       #  if: matrix.os == 'ubuntu-latest'
 
       - name: Install dependencies
-        run: install.packages(c("pracma", "magrittr", "dplyr", "knitr"))
+        run: install.packages(c("pracma", "magrittr", "dplyr"))
         shell: Rscript {0}
 
       - name: Run script 

@@ -107,6 +107,3 @@ row.names(ds) <- NULL
 names(ds)[1:2] <- c("GA shape", "Exposure window")
 names(ds)[names(ds) %in% c("rel30","rel50")] <- c("rel30 (%)", "rel50 (%)")
 ds
-
-# Added by RJCB
-knitr::kable(ds)

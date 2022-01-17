@@ -107,23 +107,6 @@ row.names(ds) <- NULL
 names(ds)[1:2] <- c("GA shape", "Exposure window")
 names(ds)[names(ds) %in% c("rel30","rel50")] <- c("rel30 (%)", "rel50 (%)")
 ds
-knitr::kable(ds)
 
-# |GA shape   |Exposure window | true30| MR30| abs30| rel30 (%)| true50|  MR50| abs50| rel50 (%)|
-# |:----------|:---------------|------:|----:|-----:|---------:|------:|-----:|-----:|---------:|
-# |Time-fixed |Uniform         |   1.20| 1.20|  0.00|      0.00|      2|  2.00|  0.00|       0.0|
-# |Time-fixed |Recent          |   1.99| 1.99|  0.00|     -0.23|      2|  2.00|  0.00|       0.0|
-# |Time-fixed |Critical        |   1.99| 1.99|  0.00|      0.12|      2|  2.00|  0.00|       0.0|
-# |Time-fixed |Increasing      |   0.72| 0.72|  0.00|      0.00|      2|  2.00|  0.00|       0.0|
-# |FTO        |Uniform         |   1.20| 0.92| -0.28|    -23.33|      2|  3.93|  1.93|      96.5|
-# |FTO        |Recent          |   1.99| 1.95| -0.04|     -2.24|      2|  3.03|  1.03|      51.5|
-# |FTO        |Critical        |   1.99| 2.14|  0.15|      7.67|      2|  6.00|  4.00|     200.0|
-# |FTO        |Increasing      |   0.72| 0.66| -0.06|     -8.33|      2|  3.93|  1.93|      96.5|
-# |Increasing |Uniform         |   1.20| 0.61| -0.59|    -49.17|      2|  1.01| -0.99|     -49.5|
-# |Increasing |Recent          |   1.99| 1.48| -0.51|    -25.80|      2|  1.68| -0.32|     -16.0|
-# |Increasing |Critical        |   1.99| 1.66| -0.33|    -16.48|      2|  1.01| -0.99|     -49.5|
-# |Increasing |Increasing      |   0.72| 0.48| -0.24|    -33.33|      2|  1.34| -0.66|     -33.0|
-# |Decreasing |Uniform         |   1.20| 1.90|  0.70|     58.33|      2| 11.00|  9.00|     450.0|
-# |Decreasing |Recent          |   1.99| 2.61|  0.62|     30.85|      2|  4.87|  2.87|     143.5|
-# |Decreasing |Critical        |   1.99| 2.38|  0.39|     19.74|      2| 11.00|  9.00|     450.0|
-# |Decreasing |Increasing      |   0.72| 1.00|  0.28|     38.89|      2|  8.00|  6.00|     300.0|
+# Added by RJCB
+knitr::kable(ds)

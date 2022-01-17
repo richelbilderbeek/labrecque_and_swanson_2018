@@ -16,14 +16,16 @@ jobs:
 
       - uses: r-lib/actions/setup-r@v1
 
-      #- name: Install libcurl4-openssl-dev
-      #  run: sudo apt install -qq libcurl4-openssl-dev
-      #  if: matrix.os == 'ubuntu-latest'
-
       - name: Install dependencies
         run: install.packages(c("pracma", "magrittr", "dplyr"))
         shell: Rscript {0}
 
       - name: Run script 
         run: Rscript labrecque_and_swanson_2018.R
+
+      - name: Upload table to the workflow tab
+        uses: actions/upload-artifact@v2
+        with:
+          name: table_1.csv
+          path: table_1.csv
 

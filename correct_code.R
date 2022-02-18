@@ -1,3 +1,5 @@
+# Added by RJCB
+require(pracma) ; require(magrittr) ; require(dplyr)
 
 
 # GbyE_shape <- "FTO" ; exp_window_shape <- "recent"

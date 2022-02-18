@@ -20,11 +20,8 @@ jobs:
         run: install.packages(c("pracma", "magrittr", "dplyr"))
         shell: Rscript {0}
 
-      #- name: Run script 
-      #  run: Rscript labrecque_and_swanson_2018.R
-
-      - name: Run corrected script 
-        run: Rscript correct_code.R
+      - name: Run script 
+        run: Rscript labrecque_and_swanson_2018.R
 
       - name: Upload table to the workflow tab
         uses: actions/upload-artifact@v2

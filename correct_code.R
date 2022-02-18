@@ -125,3 +125,6 @@ names(ds) <- c("Genetic scenario", "Exposure window",
 
 ds[, c(3,4,5,7,8,9)] <- format(round(ds[, c(3,4,5,7,8,9)],1), nsmall = 1)
 ds[, c(6,10)] <- format(round(ds[, c(6,10)],0), nsmall = 0)
+
+# Added by RJCB
+write.csv(ds, "table_1.csv")
